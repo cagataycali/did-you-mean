@@ -11,14 +11,14 @@ const didYouMean = (text, callback) => {
         correctedSpelling = entities.decode(correctedSpelling)
         let response = {
           status: true,
-          text: correctedSpelling, // Intent..
+          text: correctedSpelling,
           details: translated
         }
         callback(response, null)
       } else {
         let response = {
           status: false,
-          text: translated.text, // Result..
+          text: translated.text,
           details: translated
         }
         callback(response, null)
