@@ -1,6 +1,7 @@
 const translate = require('google-translate-api');
 const Entities = require('html-entities').AllHtmlEntities;
 entities = new Entities();
+const nlp = require('compromise');
 
 const didYouMean = (text, callback) => {
   translate(text, {to: 'en'})
@@ -12,14 +13,16 @@ const didYouMean = (text, callback) => {
         let response = {
           status: true,
           text: correctedSpelling,
-          details: translated
+          details: translated,
+          nlp: nlp(translated.text)
         }
         callback(response, null)
       } else {
         let response = {
           status: false,
           text: translated.text,
-          details: translated
+          details: translated,
+          nlp: nlp(translated.text)
         }
         callback(response, null)
       }
