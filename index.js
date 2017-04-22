@@ -14,7 +14,7 @@ const didYouMean = (text, callback) => {
           status: true,
           text: correctedSpelling,
           details: translated,
-          nlp: nlp(translated.text)
+          nlp: nlp(translated.text).nouns().out('array')
         }
         callback(response, null)
       } else {
@@ -22,7 +22,7 @@ const didYouMean = (text, callback) => {
           status: false,
           text: translated.text,
           details: translated,
-          nlp: nlp(translated.text)
+          nlp: nlp(translated.text).nouns().out('array')
         }
         callback(response, null)
       }
