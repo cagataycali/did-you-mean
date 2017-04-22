@@ -1,6 +1,6 @@
 {
   "name": "what-did-you-means",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Did you mean as a service.",
   "main": "index.js",
   "scripts": {
