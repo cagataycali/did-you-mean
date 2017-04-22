@@ -1,5 +1,5 @@
 {
-  "name": "did-you-mean",
+  "name": "what-did-you-means",
   "version": "1.0.0",
   "description": "Did you mean as a service.",
   "main": "index.js",
