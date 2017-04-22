@@ -1,0 +1,21 @@
+{
+  "name": "did-you-mean",
+  "version": "1.0.0",
+  "description": "Did you mean as a service.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "did",
+    "you",
+    "mean"
+  ],
+  "author": "Çağatay Çalı",
+  "license": "ISC",
+  "dependencies": {
+    "compromise": "^10.0.0",
+    "google-translate-api": "^2.2.2",
+    "html-entities": "^1.2.0"
+  }
+}
