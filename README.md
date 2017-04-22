@@ -1,7 +1,7 @@
 # What did you mean?
 
 ```bash
-yarn add what-did-you-mean
+$> yarn add what-did-you-mean
 ```
 
 ```javascript
