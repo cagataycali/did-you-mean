@@ -14,7 +14,7 @@
   "author": "Çağatay Çalı",
   "license": "ISC",
   "dependencies": {
-    "compromise": "^10.0.0",
+    "compromise": "^11.5.1",
     "google-translate-api": "^2.2.2",
     "html-entities": "^1.2.0"
   }
